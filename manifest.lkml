@@ -6,13 +6,32 @@ remote_dependency: app-marketing-common {
   ref: "3d8fe8aa069aecfb55b245599cf2f7a9ed1b8f36"
 }
 
-# LookML to map the ETL and data warehouse for Google Ads
 remote_dependency: app-marketing-google-ads-adapter {
   url: "git://github.com/looker/app-marketing-google-ads-fivetran-bigquery"
-  ref: "fd889415faea8fe453c4f9595497f9e2cec6b322"
+  ref: "66bd8b41ff601d90bd39d3f0522128a56b40c2e4"
 }
 
 remote_dependency: app-marketing-google-ads {
   url: "git://github.com/looker/app-marketing-google-ads"
-  ref: "9c1627bd4a62fda841564447b6619604ffe8d783"
+  ref: "54d64ffcdd98a365e8f9bc64ac298e1ac88cc6de"
+}
+
+local_dependency: {
+  project: "block-google-ads-config"
+}
+
+constant: CONFIG_PROJECT_NAME {
+  value: "block-google-ads-config"
+}
+
+# TODO: Update connection
+constant: CONNECTION_NAME {
+  value: "looker_application"
+  export: override_required
+}
+
+# TODO: Update schema
+constant: ADWORDS_SCHEMA {
+  value: "google_ads"
+  export: override_required
 }
