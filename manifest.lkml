@@ -17,7 +17,7 @@ remote_dependency: app-marketing-google-ads {
 }
 
 local_dependency: {
-  project: "block-google-ads-config"
+  project: "@{CONFIG_PROJECT_NAME}"
 }
 
 constant: CONFIG_PROJECT_NAME {
