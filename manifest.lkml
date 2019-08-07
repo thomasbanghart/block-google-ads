@@ -22,6 +22,7 @@ local_dependency: {
 
 constant: CONFIG_PROJECT_NAME {
   value: "block-google-ads-config"
+  export: override_required
 }
 
 # TODO: Update connection
