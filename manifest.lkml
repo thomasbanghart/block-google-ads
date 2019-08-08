@@ -18,6 +18,9 @@ remote_dependency: app-marketing-google-ads {
 
 local_dependency: {
   project: "@{CONFIG_PROJECT_NAME}"
+  override_constant: ADWORDS_SCHEMA {
+    value: "@{ADWORDS_SCHEMA}"
+}
 }
 
 constant: CONFIG_PROJECT_NAME {

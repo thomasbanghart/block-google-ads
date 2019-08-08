@@ -6,16 +6,6 @@ include: "//app-marketing-google-ads-adapter/*.view"
 include: "//app-marketing-google-ads/*.view"
 include: "//app-marketing-common/*.view"
 
-view: adwords_config {
-  extension: required
-
-  # TODO: Update Google Ads schema
-  dimension: adwords_schema {
-    hidden: yes
-    sql:@{ADWORDS_SCHEMA};;
-  }
-}
-
 # Customize measure definitions in this view. Changes will be reflected across all projects.
 view: ad_metrics_base {
   extends: [ad_metrics_base_config]
