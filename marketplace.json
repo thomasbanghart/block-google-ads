@@ -23,7 +23,7 @@
   "auxiliary_projects": [
     {
       "git_uri": "git://github.com/looker/block-google-ads-config.git",
-      "git_ref": "d95fda6da44221ccbda5655f41ba566911de22d0",
+      "git_ref": "11390160649d6cd5314e2baa77bd26b985376bd2",
       "label": "Block Google Ads Config",
       "constant_name": "CONFIG_PROJECT_NAME"
     }
