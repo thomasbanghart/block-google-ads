@@ -12,8 +12,8 @@ explore: ad_impressions {
   hidden: yes
 }
 
-explore: ad_impressions_hour {
-  extends: [ad_impressions_hour_config]
+explore: ad_impressions_daily {
+  extends: [ad_impressions_daily_config]
   hidden: yes
 }
 
@@ -23,8 +23,8 @@ explore: ad_impressions_campaign {
   hidden: yes
 }
 
-explore: ad_impressions_campaign_hour {
-  extends: [ad_impressions_campaign_hour_config]
+explore: ad_impressions_campaign_daily {
+  extends: [ad_impressions_campaign_daily_config]
   hidden: yes
 }
 

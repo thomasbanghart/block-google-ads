@@ -39,16 +39,16 @@ view: ad_impressions {
   extends: [ad_impressions_config]
 }
 
-view: ad_impressions_hour {
-  extends: [ad_impressions_hour_config]
+view: ad_impressions_daily {
+  extends: [ad_impressions_daily_config]
 }
 
 view: ad_impressions_campaign {
   extends: [ad_impressions_campaign_config]
 }
 
-view: ad_impressions_campaign_hour {
-  extends: [ad_impressions_campaign_hour_config]
+view: ad_impressions_campaign_daily {
+  extends: [ad_impressions_campaign_daily_config]
 }
 
 view: ad_impressions_ad_group_hour {
