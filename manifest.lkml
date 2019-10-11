@@ -8,7 +8,7 @@ remote_dependency: app-marketing-common {
 
 remote_dependency: app-marketing-google-ads-adapter {
   url: "git://github.com/looker/app-marketing-google-ads-fivetran-bigquery"
-  ref: "4da018de6da943a396b3565b9d63069e53985b92"
+  ref: "9d03ac068dd377cfe12224f843c9d3f699209db7"
 }
 
 remote_dependency: app-marketing-google-ads {
