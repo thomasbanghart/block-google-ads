@@ -4,7 +4,7 @@
   elements:
   - title: Clicks by Device
     name: Clicks by Device
-    model: marketing_analytics
+    model: block_google_ads
     explore: ad_impressions_ad_group
     type: looker_bar
     fields:
@@ -83,7 +83,7 @@
     height: 4
   - title: Clicks by Bid Strategy
     name: Clicks by Bid Strategy
-    model: marketing_analytics
+    model: block_google_ads
     explore: ad_impressions_keyword
     type: looker_bar
     fields:
@@ -164,7 +164,7 @@
     height: 4
   - title: Clicks To Date
     name: Clicks To Date
-    model: marketing_analytics
+    model: block_google_ads
     explore: period_fact
     type: looker_column
     fields:
@@ -339,7 +339,7 @@
     height: 10
   - title: Clicks by Network
     name: Clicks by Network
-    model: marketing_analytics
+    model: block_google_ads
     explore: ad_impressions_ad_group
     type: looker_bar
     fields:
@@ -420,7 +420,7 @@
     height: 4
   - title: Clicks by Day of Week and Hour of Day
     name: Clicks by Day of Week and Hour of Day
-    model: marketing_analytics
+    model: block_google_ads
     explore: ad_impressions_ad_group_hour
     type: table
     fields:
@@ -538,7 +538,7 @@
     height: 14
   - title: Clicks By State
     name: Clicks By State
-    model: marketing_analytics
+    model: block_google_ads
     explore: ad_impressions_geo
     type: looker_map
     fields:
@@ -590,7 +590,7 @@
     height: 12
   - title: Clicks by Day of Week
     name: Clicks by Day of Week
-    model: marketing_analytics
+    model: block_google_ads
     explore: period_fact
     type: looker_bar
     fields:
@@ -716,7 +716,7 @@
     height: 7
   - title: Ad Group Clicks Change
     name: Ad Group Clicks Change
-    model: marketing_analytics
+    model: block_google_ads
     explore: period_fact
     type: looker_bar
     fields:
@@ -818,7 +818,7 @@
     height: 10
   - title: Keyword Clicks Change
     name: Keyword Clicks Change
-    model: marketing_analytics
+    model: block_google_ads
     explore: period_fact
     type: looker_bar
     fields:
@@ -922,7 +922,7 @@
     height: 10
   - title: Ad Clicks Change
     name: Ad Clicks Change
-    model: marketing_analytics
+    model: block_google_ads
     explore: period_fact
     type: looker_bar
     fields:
@@ -1037,7 +1037,7 @@
     height: 10
   - title: Clicks by Hour of Day
     name: Clicks by Hour of Day
-    model: marketing_analytics
+    model: block_google_ads
     explore: ad_impressions_ad_group_hour
     type: looker_column
     fields:
