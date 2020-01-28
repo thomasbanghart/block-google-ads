@@ -29,11 +29,11 @@ constant: CONFIG_PROJECT_NAME {
 }
 
 constant: CONNECTION_NAME {
-  value: "looker_application"
+  value: "looker_app_2"
   export: override_required
 }
 
 constant: ADWORDS_SCHEMA {
-  value: "google_ads"
+  value: "adwords_generated_2"
   export: override_required
 }
