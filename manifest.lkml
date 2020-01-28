@@ -28,13 +28,11 @@ constant: CONFIG_PROJECT_NAME {
   export: override_required
 }
 
-# TODO: Update connection
 constant: CONNECTION_NAME {
   value: "looker_application"
   export: override_required
 }
 
-# TODO: Update schema
 constant: ADWORDS_SCHEMA {
   value: "google_ads"
   export: override_required
