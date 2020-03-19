@@ -144,87 +144,6 @@
     col: 16
     width: 8
     height: 11
-  - title: Spend by Day of Week and Hour of Day
-    name: Spend by Day of Week and Hour of Day
-    model: block_google_ads
-    explore: ad_impressions_ad_group_hour
-    type: table
-    fields: [fact.total_cost, fact.hour_of_day, fact.date_day_of_week]
-    pivots: [fact.date_day_of_week]
-    fill_fields: [fact.date_day_of_week]
-    sorts: [fact.date_day_of_week 0, fact.hour_of_day]
-    limit: 500
-    show_view_names: false
-    show_row_numbers: false
-    truncate_column_names: false
-    hide_totals: false
-    hide_row_totals: false
-    table_theme: gray
-    limit_displayed_rows: false
-    enable_conditional_formatting: true
-    conditional_formatting_include_totals: false
-    conditional_formatting_include_nulls: false
-    leftAxisLabelVisible: false
-    leftAxisLabel: ''
-    rightAxisLabelVisible: false
-    rightAxisLabel: ''
-    barColors: [red, blue]
-    smoothedBars: false
-    orientation: automatic
-    labelPosition: left
-    percentType: total
-    percentPosition: inline
-    valuePosition: right
-    labelColorEnabled: false
-    labelColor: "#FFF"
-    groupBars: true
-    labelSize: 10pt
-    showLegend: true
-    stacking: ''
-    show_value_labels: true
-    label_density: 25
-    legend_position: center
-    x_axis_gridlines: false
-    y_axis_gridlines: true
-    y_axis_combined: true
-    show_y_axis_labels: true
-    show_y_axis_ticks: true
-    y_axis_tick_density: default
-    y_axis_tick_density_custom: 5
-    show_x_axis_label: true
-    show_x_axis_ticks: true
-    x_axis_scale: auto
-    y_axis_scale_mode: linear
-    ordering: none
-    show_null_labels: false
-    show_totals_labels: false
-    show_silhouette: false
-    totals_color: "#808080"
-    series_types: {}
-    label_color: []
-    x_axis_label: Network
-    y_axes: [{label: '', maxValue: !!null '', minValue: !!null '', orientation: bottom,
-        showLabels: false, showValues: false, tickDensity: default, tickDensityCustom: 5,
-        type: linear, unpinAxis: false, valueFormat: !!null '', series: [{id: fact.total_cost,
-            name: Ad Stats Cost, axisId: fact.total_cost}]}]
-    conditional_formatting: [{type: high to low, value: !!null '', background_color: !!null '',
-        font_color: !!null '', palette: {name: Red to Yellow to Green, colors: ["#F36254",
-            "#FCF758", "#4FBC89"]}, bold: false, italic: false, strikethrough: false,
-        fields: [fact.total_cost]}]
-    series_labels:
-      fact.hour_of_day: Hour of Day
-      fact.total_cost: "-"
-      fact.date_day_of_week: Day of Week
-    listen:
-      Account: customer.account_descriptive_name
-      Campaign: campaign.name
-      Ad Group: ad_group.ad_group_name
-      Period: fact.period
-      Period Latest: fact.date_period_latest
-    row: 17
-    col: 0
-    width: 14
-    height: 12
   - title: Spend by Network
     name: Spend by Network
     model: block_google_ads
@@ -784,3 +703,97 @@
     col: 12
     width: 12
     height: 14
+  - title: Spend by Day of Week and Hour of Day
+    name: Spend by Day of Week and Hour of Day
+    model: block_google_ads
+    explore: ad_impressions_ad_group_hour
+    type: looker_grid
+    fields: [fact.total_cost, fact.hour_of_day, fact.date_day_of_week]
+    pivots: [fact.date_day_of_week]
+    fill_fields: [fact.date_day_of_week]
+    sorts: [fact.date_day_of_week 0, fact.hour_of_day]
+    limit: 500
+    show_view_names: false
+    show_row_numbers: false
+    transpose: false
+    truncate_text: true
+    hide_totals: false
+    hide_row_totals: false
+    size_to_fit: true
+    table_theme: gray
+    limit_displayed_rows: false
+    enable_conditional_formatting: true
+    header_text_alignment: left
+    header_font_size: '12'
+    rows_font_size: '12'
+    conditional_formatting_include_totals: false
+    conditional_formatting_include_nulls: false
+    show_sql_query_menu_options: false
+    show_totals: true
+    show_row_totals: true
+    series_labels:
+      fact.hour_of_day: Hour of Day
+      fact.date_day_of_week: Day of Week
+    series_cell_visualizations:
+      fact.total_cost:
+        is_active: false
+    conditional_formatting: [{type: along a scale..., value: !!null '', background_color: !!null '',
+        font_color: !!null '', palette: {name: Red to Yellow to Green, colors: ["#F36254",
+            "#FCF758", "#4FBC89"]}, bold: false, italic: false, strikethrough: false,
+        fields: [fact.total_cost], color_application: {collection_id: legacy, palette_id: legacy_diverging2,
+          options: {steps: 5, reverse: true}}}]
+    truncate_column_names: false
+    leftAxisLabelVisible: false
+    leftAxisLabel: ''
+    rightAxisLabelVisible: false
+    rightAxisLabel: ''
+    barColors: [red, blue]
+    smoothedBars: false
+    orientation: automatic
+    labelPosition: left
+    percentType: total
+    percentPosition: inline
+    valuePosition: right
+    labelColorEnabled: false
+    labelColor: "#FFF"
+    groupBars: true
+    labelSize: 10pt
+    showLegend: true
+    stacking: ''
+    show_value_labels: true
+    label_density: 25
+    legend_position: center
+    x_axis_gridlines: false
+    y_axis_gridlines: true
+    y_axis_combined: true
+    show_y_axis_labels: true
+    show_y_axis_ticks: true
+    y_axis_tick_density: default
+    y_axis_tick_density_custom: 5
+    show_x_axis_label: true
+    show_x_axis_ticks: true
+    x_axis_scale: auto
+    y_axis_scale_mode: linear
+    ordering: none
+    show_null_labels: false
+    show_totals_labels: false
+    show_silhouette: false
+    totals_color: "#808080"
+    series_types: {}
+    label_color: []
+    x_axis_label: Network
+    y_axes: [{label: '', maxValue: !!null '', minValue: !!null '', orientation: bottom,
+        showLabels: false, showValues: false, tickDensity: default, tickDensityCustom: 5,
+        type: linear, unpinAxis: false, valueFormat: !!null '', series: [{id: fact.total_cost,
+            name: Ad Stats Cost, axisId: fact.total_cost}]}]
+    defaults_version: 1
+    listen:
+      Account: customer.account_descriptive_name
+      Campaign: campaign.name
+      Ad Group: ad_group.ad_group_name
+      Period: fact.period
+      Period Latest: fact.date_period_latest
+    row: 17
+    col: 0
+    width: 14
+    height: 12
